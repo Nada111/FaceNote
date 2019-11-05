@@ -1,0 +1,39 @@
+ {/* <div>
+            <img className="article-side-image" src={this.state.data.articles[0].urlToImage}></img>
+            <p className="date2">{moment(this.state.data.articles[0].publishedAt).startOf('day').fromNow() } | {this.state.data.articles[0].source.name}</p>
+          <h3 ><a className="watch-listen-link" href={this.state.data.articles[0].url}> {this.state.data.articles[0].title}</a></h3>
+         
+          </div>
+          <div>
+          <img className="article-side-image" src={this.state.data.articles[0].urlToImage}></img>
+          <h3 ><a className="watch-listen-link" href={this.state.data.articles[0].url}> {this.state.data.articles[0].title}</a></h3>
+          </div>
+          <div>
+          <img className="article-side-image" src={this.state.data.articles[0].urlToImage}></img>
+          <h3 ><a className="watch-listen-link" href={this.state.data.articles[0].url}> {this.state.data.articles[0].title}</a></h3>
+          </div>
+
+          <div>
+            <img className="article-side-image" src={this.state.data.articles[0].urlToImage}></img>
+            <p className="date2">{moment(this.state.data.articles[0].publishedAt).startOf('day').fromNow() } | {this.state.data.articles[0].source.name}</p>
+          <h3 ><a className="watch-listen-link" href={this.state.data.articles[0].url}> {this.state.data.articles[0].title}</a></h3>
+         
+          </div>
+          <div>
+          <img className="article-side-image" src={this.state.data.articles[0].urlToImage}></img>
+          <h3 ><a className="watch-listen-link" href={this.state.data.articles[0].url}> {this.state.data.articles[0].title}</a></h3>
+          </div>
+          <div>
+          <img className="article-side-image" src={this.state.data.articles[0].urlToImage}></img>
+          <h3 ><a className="watch-listen-link" href={this.state.data.articles[0].url}> {this.state.data.articles[0].title}</a></h3>
+          </div> */}
+          {/* ********************** */}
+         
+        
+         {/* { this.state.data.articles.map((ele,index)=>
+            if (index<1) 
+              <div>
+              <img className="article-side-image" src={ele.urlToImage}></img>
+              </div>
+            
+          )} */}

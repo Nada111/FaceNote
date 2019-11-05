@@ -1,4 +1,20 @@
 import React, { Component } from 'react'
+import {
+    BrowserRouter ,
+    Switch,
+    Route,
+    Link, 
+  }
+  from "react-router-dom";
+  import Home from './Home'
+  import Business from './Business'
+  import Intertain from './Intertain'
+  import Science from './Since'
+  import Sport from './Sport'
+  import Tec from './Tec'
+  import Health from './Health'
+
+  
 
 export default class Header extends Component {
     render() {
@@ -6,11 +22,11 @@ export default class Header extends Component {
             <div>
                  <div className="clear"></div>
         
-        <div id="menu-bar-container">
+        <div className="menu-bar-container">
             
-            <div id="menu-bar">
+            <div className="menu-bar">
             
-                <h1>NEWS</h1>
+                <h1> NEWS</h1>
                 
                 <div id="local-news">
                 
@@ -28,33 +44,38 @@ export default class Header extends Component {
             
                 <div id="menu-bar-2">
                 
-                    <a href="">Home</a>
-                    
-                    <a href="">UK</a>
-                    
-                    <a href="">World</a>
-                    
-                     <a href="">Business</a>
-                    
-                     <a href="">Politics</a>
-                    
-                     <a href="">Tech</a>
-                    
-                     <a href="">Science</a>
-                    
-                     <a href="">Health</a>
-                    
-                     <a href="">Education</a>
+                  
                 
-                     <a href="">Entertainment & Arts</a>
-                    
-                     <a href="">Video & Audio</a>
-                    
-                     <a href="" className="no-border">More</a>
-                    
-                    <img id="down-arrow" src=""></img>
+
+             {/* ****************************************** */}
+
+     <BrowserRouter>
+    
+        <Link className="a1" to="/home"> Home</Link>
+        <Link className="a1" to="/business"> Business</Link>
+        <Link className="a1" to="/entertainment"> Entertainment</Link>
+        <Link className="a1" to="/since"> Science</Link>
+        <Link className="a1" to="/sport">Sport</Link>
+        <Link className="a1" to="/tec"> Technology</Link>
+        <Link className="a1" to="/health"> Health</Link>
+
+        
+            <Switch>
+                 <Route  path="/home" component={Home}/>
+                 <Route  path="/business" component={Business}/>
+                 <Route  path="/Entertainment" component={Intertain}/>
+                 <Route  path="/since" component={Science}/>
+                 <Route  path="/sport" component={Sport}/>
+                 <Route  path="/tec" component={Tec}/>
+                 <Route  path="/health" component={Health}/>
+
                 
-                </div>
+      
+      </Switch>
+
+             </BrowserRouter>
+</div>
+             {/* *********************************************** */}
             
             </div>
         
