@@ -36,6 +36,7 @@ export default class Mainlist extends Component {
                { this.state.data !== null&&  
                <div> 
                  <div className="container">
+                
                 <img id="main-article-image" src={this.state.data.articles[0].urlToImage}></img>
                 <h3 className="h33"><a href={this.state.data.articles[0].url}> {this.state.data.articles[0].title}</a></h3>
                     
@@ -50,23 +51,7 @@ export default class Mainlist extends Component {
                     
               
                 </div>
-                <div className="clear"></div>
-
-                <div className="container">
-                <img id="main-article-image" src={this.state.data.articles[0].urlToImage}></img>
-                <h3 className="h33"><a href={this.state.data.articles[0].url}> {this.state.data.articles[0].title}</a></h3>
-                    
-
-                    <div id="article-summary">
-                    
-                      <p className="date1">{moment(this.state.data.articles[0].publishedAt).startOf('hour').fromNow() } | {this.state.data.articles[0].source.name}</p>
-                     
-                      <p>{this.state.data.articles[0].content}</p>
-
-                    </div>
-                    
-              
-                </div>
+                
                 </div>}
              
                 { this.state.data !== null&& 

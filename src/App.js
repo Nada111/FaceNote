@@ -4,7 +4,9 @@ import Footer from './component/Footer'
 import './App.css';
 import React, { Component } from 'react'
 
+
 export default class App extends Component {
+ 
  
   render() {
    
@@ -12,7 +14,7 @@ export default class App extends Component {
     return (
       <div>
         
-         <Header/>
+         <Header Home={"Home"} Business={"Business"} Sport={"Sport"} Health={"Health"} Entertainment={"Entertainment"} Science={"Science"} Technology={"Technology"} Health={"Health"}/>
 
    
          <div className="clear"></div>
