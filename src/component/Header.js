@@ -6,60 +6,55 @@ import {
     Link, 
   }
   from "react-router-dom";
+  import { Container, Form, Button,Navbar,Nav,Toast
+  } from 'react-bootstrap'
 
   import Login from './login'
   import Reg from './register'
+  import Home from './Home'
+
 
   
 
 export default class Header extends Component {
     render() {
-        return (
-            <div>
-                 <div className="clear"></div>
-        
-        <div className="menu-bar-container">
+        return ( 
             
-            <div className="menu-bar">
-              
-                <h1> FaceNote</h1>
-                
+       
+        <div>
+            
+     <div>
+            <Navbar id="Navbar" variant="dark" >
+                <Navbar.Brand href="/">FaceNote</Navbar.Brand>
+                <Navbar.Collapse  className="justify-content-end">
+                    <Nav  className="mr-auto">
+                       
+                            <Nav.Link activeClassName="active" href="/login">Login</Nav.Link>
+                            <Nav.Link href="/register">Register</Nav.Link>
+                     
+                    </Nav>
+                  
+                </Navbar.Collapse>
+            </Navbar>
             </div>
-            
-            <div className="clear"></div>
-            
-            <div id="menu-bar-2-container">
-            
-                <div id="menu-bar-2">
-                
 
-             {/* ****************************************** */}
-
-     <BrowserRouter>
-    
-  
-        <Link className="a1" to="/login"> Login</Link>
-        <Link className="a1" to="/register"> Register</Link>
-        <Link className="a1" to="/"> Home</Link>
-
-        
-            <Switch>
-                
-                 <Route  path="/login" component={Login}/>
-                 <Route  path="/register" component={Reg}/>
-                
+     
       
-      </Switch>
-
-             </BrowserRouter>
-</div>
-             {/* *********************************************** */}
-            
-            </div>
-        
+        <BrowserRouter>
+            <Switch>
+                <Route exact path='/' component={Home} />
+                <Route exact path='/login' component={Login} />
+                <Route exact path='/register' component={Reg} />
+             
+            </Switch>
+            </BrowserRouter>
+          
+   
         </div>
-                
-            </div>
+   
         )
     }
 }
+
+
+
