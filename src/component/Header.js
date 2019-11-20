@@ -6,14 +6,9 @@ import {
     Link, 
   }
   from "react-router-dom";
-  import Home from './Home'
-  import Business from './Business'
-  import Intertain from './Intertain'
-  import Science from './Since'
-  import Sport from './Sport'
-  import Tec from './Tec'
-  import Health from './Health'
-  import Subscribe from './Subscribe'
+
+  import Login from './login'
+  import Reg from './register'
 
   
 
@@ -26,8 +21,8 @@ export default class Header extends Component {
         <div className="menu-bar-container">
             
             <div className="menu-bar">
-            
-                <h1> NEWS</h1>
+              
+                <h1> FaceNote</h1>
                 
             </div>
             
@@ -42,26 +37,16 @@ export default class Header extends Component {
 
      <BrowserRouter>
     
-        <Link className="a1" to="/home"> {this.props.Home}</Link>
-        <Link className="a1" to="/business"> {this.props.Business}</Link>
-        <Link className="a1" to="/entertainment"> {this.props.Entertainment}</Link>
-        <Link className="a1" to="/since"> {this.props.Science}</Link>
-        <Link className="a1" to="/sport">{this.props.Sport}</Link>
-        <Link className="a1" to="/tec"> {this.props.Technology}</Link>
-        <Link className="a1" to="/health"> {this.props.Health}</Link>
-        <Link className="a1" to="/subscribe"> Subscribe</Link>
+  
+        <Link className="a1" to="/login"> Login</Link>
+        <Link className="a1" to="/register"> Register</Link>
+        <Link className="a1" to="/"> Home</Link>
 
         
             <Switch>
-                 <Route  path="/home" component={Home}/>
-                 <Route  path="/business" component={Business}/>
-                 <Route  path="/Entertainment" component={Intertain}/>
-                 <Route  path="/since" component={Science}/>
-                 <Route  path="/sport" component={Sport}/>
-                 <Route  path="/tec" component={Tec}/>
-                 <Route  path="/health" component={Health}/>
-                 <Route  path="/subscribe" component={Subscribe}/>
-
+                
+                 <Route  path="/login" component={Login}/>
+                 <Route  path="/register" component={Reg}/>
                 
       
       </Switch>
