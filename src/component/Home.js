@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Form, Button,Navbar,Nav,Toast
+import { Container, Form, Button,Navbar,Nav,Toast,ListGroup
 } from 'react-bootstrap'
 
 
@@ -12,6 +12,15 @@ export default class Mainlist extends Component {
         
         return (
             <div>
+                <div className="friend">
+                <ListGroup >
+  <ListGroup.Item>Friend 1</ListGroup.Item>
+  <ListGroup.Item>Friend 2</ListGroup.Item>
+  <ListGroup.Item>Friend3</ListGroup.Item>
+ 
+</ListGroup>
+                </div>
+                <div className="clear"> </div>    
             <div className="container">
     <Form>
       <Form.Group controlId="exampleForm.ControlTextarea1">
@@ -20,12 +29,12 @@ export default class Mainlist extends Component {
      </Form.Group>
   
      <Button variant="primary" type="submit">
-        create post
+        Post it
        </Button>
     </Form>
          </div>
          <div className="clear"> </div>
-            <div className="container">
+            <div className="container2">
             <Toast>
   <Toast.Header>
     <img src="holder.js/20x20?text=%20" className="rounded mr-2" alt="" />

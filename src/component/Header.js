@@ -6,7 +6,7 @@ import {
     Link, 
   }
   from "react-router-dom";
-  import { Container, Form, Button,Navbar,Nav,Toast
+  import { Container, Form, Button,Navbar,Nav,Toast,FormControl
   } from 'react-bootstrap'
 
   import Login from './login'
@@ -29,12 +29,18 @@ export default class Header extends Component {
                 <Navbar.Collapse  className="justify-content-end">
                     <Nav  className="mr-auto">
                        
-                            <Nav.Link activeClassName="active" href="/login">Login</Nav.Link>
+                            <Nav.Link  href="/login">Login</Nav.Link>
                             <Nav.Link href="/register">Register</Nav.Link>
                      
                     </Nav>
                   
                 </Navbar.Collapse>
+                <Nav className="ml-auto">
+              <Form inline>
+                <FormControl type="text" placeholder="Search" className="ml-auto" />
+                <Button variant="outline-dark">Search</Button>
+              </Form>
+            </Nav>
             </Navbar>
             </div>
 
